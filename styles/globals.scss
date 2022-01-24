@@ -1,0 +1,32 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+		Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+$main-gradient-background-color: linear-gradient(
+	to right top,
+	#021b79,
+	#001868,
+	#001558,
+	#001248,
+	#010c38,
+	#231342,
+	#3e184a,
+	#581e50,
+	#a02e59,
+	#dc534d,
+	#ff8d30,
+	#ffd200
+);
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+* {
+	box-sizing: border-box;
+}

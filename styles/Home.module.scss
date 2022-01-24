@@ -1,0 +1,36 @@
+.container {
+	padding: 0 2rem;
+	padding: 0;
+	margin: 0;
+}
+
+.main {
+	min-height: 100vh;
+	padding: 4rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(
+		to right top,
+		#1a2023,
+		#1a2023,
+		#1a2023,
+		#1a2023,
+		#1a2023,
+		#1a2328,
+		#1b272e,
+		#1c2a34,
+		#203141,
+		#28374f,
+		#343d5c,
+		#444267
+	);
+}
+
+@media (max-width: 600px) {
+	.grid {
+		width: 100%;
+		flex-direction: column;
+	}
+}
