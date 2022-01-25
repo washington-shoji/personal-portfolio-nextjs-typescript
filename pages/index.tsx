@@ -1,5 +1,6 @@
 import type {NextPage} from 'next';
 import Head from 'next/head';
+import {Hero} from '../src/components/hero/Hero';
 import styles from '../styles/Home.module.scss';
 
 const FrontPage: NextPage = () => {
@@ -12,7 +13,7 @@ const FrontPage: NextPage = () => {
 			</Head>
 
 			<main className={styles.main}>
-				<h1>Main Page</h1>
+				<Hero />
 			</main>
 		</div>
 	);
