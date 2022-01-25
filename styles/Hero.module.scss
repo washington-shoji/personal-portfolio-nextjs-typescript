@@ -1,0 +1,44 @@
+@import 'styles/variables.module.scss';
+
+.hero_container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 0 90px;
+}
+
+.hero_header {
+	width: 50%;
+	margin-right: 5rem;
+
+	h1 {
+		font-weight: 700;
+		font-size: 3.875rem;
+		line-height: 3.438rem;
+		letter-spacing: 0.04em;
+	}
+	p {
+		font-size: 1.25rem;
+	}
+
+	h1,
+	p {
+		color: white;
+	}
+
+	span {
+		color: $secondary-colour-1;
+	}
+}
+
+.hero_image__wrapper {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero_image {
+	width: 50px;
+	height: 50px;
+}
