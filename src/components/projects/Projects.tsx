@@ -80,6 +80,7 @@ export default function Projects(): JSX.Element {
 									<Link href={project.githubLink}>
 										<a target='_blank'> Github</a>
 									</Link>
+									<div className={styles.animation}></div>
 								</div>
 							</div>
 						</div>
