@@ -16,17 +16,14 @@ export default function NavigationBar(): JSX.Element {
 		<div className={styles.navbar_container}>
 			<div className={styles.navbar_logo}>{<FaSignature />}</div>
 			<nav>
-				<ul>
-					{navData.map((item) => {
-						return (
-							<li key={item.title}>
-								<Link href={`${item.link}`}>
-									<a>{item.title}</a>
-								</Link>
-							</li>
-						);
-					})}
-				</ul>
+				{navData.map((item) => {
+					return (
+						<Link key={item.title} href={`${item.link}`}>
+							<a>{item.title}</a>
+						</Link>
+					);
+				})}
+				<div className={styles.animation}></div>
 			</nav>
 		</div>
 	);
