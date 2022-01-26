@@ -1,7 +1,9 @@
 import type {NextPage} from 'next';
 import Head from 'next/head';
 import {Hero} from '../src/components/hero/Hero';
+import Skill from '../src/components/skill/Skill';
 import styles from '../styles/Home.module.scss';
+import Projects from './../src/components/projects/Projects';
 
 const FrontPage: NextPage = () => {
 	return (
@@ -14,6 +16,8 @@ const FrontPage: NextPage = () => {
 
 			<main className={styles.main}>
 				<Hero />
+				<Skill />
+				<Projects />
 			</main>
 		</div>
 	);
