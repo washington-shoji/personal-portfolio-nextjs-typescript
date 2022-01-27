@@ -1,0 +1,70 @@
+@import 'styles/variables.module.scss';
+
+.container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.experience_header {
+	flex: 1;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+
+	text-align: left;
+	margin-right: 5rem;
+
+	& h1 {
+		font-family: Fauna;
+		text-transform: uppercase;
+		color: $secondary-colour-1;
+	}
+
+	& p {
+		font-size: 22px;
+		color: whitesmoke;
+	}
+}
+
+.experience_wrapper {
+	flex: 1.5;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+}
+
+.experience_content {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row;
+
+	& .experience_title {
+		flex: 1;
+		margin-right: 2rem;
+	}
+	& h1 {
+		font-weight: 800;
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0.04em;
+		color: white;
+	}
+
+	& .experience_text {
+		flex: 2;
+		max-width: 390px;
+		display: flex;
+	}
+	& p {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: whitesmoke;
+	}
+}
