@@ -1,8 +1,7 @@
 @import 'styles/variables.module.scss';
 
 .container {
-	width: 90%;
-	margin: 32px;
+	width: 100%;
 	padding: 32px;
 	box-shadow: 0 0 0.04rem 0 rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
@@ -10,8 +9,10 @@
 	overflow: hidden;
 	color: whitesmoke;
 
-	h1 {
-		color: #ff6a00;
+	& h1 {
+		font-family: Fauna;
+		text-transform: uppercase;
+		color: $secondary-colour-1;
 	}
 }
 
@@ -48,7 +49,7 @@
 	justify-content: center;
 	align-items: center;
 
-	.project_navigation {
+	& .project_navigation {
 		width: 100%;
 		display: flex;
 		justify-content: space-evenly;
@@ -57,7 +58,7 @@
 		border-radius: 5px;
 		background-color: rgba(52, 73, 94, 0.45);
 
-		.animation {
+		& .animation {
 			position: absolute;
 			height: 100%;
 			top: 0;
@@ -66,52 +67,33 @@
 			border-radius: 5px;
 		}
 
-		a {
+		& a {
 			z-index: 1;
 			height: 100%;
 			padding: 16px;
 			border-radius: 5px;
 			text-align: center;
+			text-transform: uppercase;
 			color: white;
 			cursor: pointer;
 		}
 
-		a:first-child {
+		& a:nth-child(1) {
 			width: 100%;
 		}
-		a:nth-child(2) {
+		& a:nth-child(2) {
 			width: 100%;
 		}
 
-		a:nth-child(1):hover ~ .animation {
+		& a:nth-child(1):hover ~ .animation {
 			width: 50%;
 			left: 0;
 			background-color: $secondary-colour-1;
 		}
-		a:nth-child(2):hover ~ .animation {
+		& a:nth-child(2):hover ~ .animation {
 			width: 50%;
 			left: 50%;
 			background-color: $secondary-colour-2;
 		}
-
-		// a:first-child {
-		// 	//background-color: whitesmoke;
-		// }
-
-		// a:first-child:hover {
-		// 	// border: 1.5px solid whitesmoke;
-		// 	// color: whitesmoke;
-		// 	// background-color: orangered;
-		// }
-
-		// a:last-child {
-		// 	// border: 1.5px solid whitesmoke;
-		// 	// background-color: whitesmoke;
-		// }
-		// a:last-child:hover {
-		// 	// border: 1.5px solid whitesmoke;
-		// 	// color: whitesmoke;
-		// 	// background-color: darkslateblue;
-		// }
 	}
 }
