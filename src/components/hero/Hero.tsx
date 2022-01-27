@@ -10,8 +10,8 @@ export function Hero(): JSX.Element {
 					I am <span>Washington</span>
 				</h1>
 				<p>
-					A passionate self-taught full-stack web and mobile developer who
-					strives to help solve problems with my technical skills.
+					I am a passionate, full-stack web developer who strives to help people
+					solve their problems with my technical skills.
 				</p>
 			</div>
 			<div className={styles.hero_image__wrapper}>

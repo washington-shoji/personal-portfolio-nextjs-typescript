@@ -4,30 +4,33 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding: 0 90px;
 }
 
 .hero_header {
 	width: 50%;
 	margin-right: 5rem;
 
-	h1 {
+	& h1 {
+		font-family: Fauna;
+		text-transform: uppercase;
 		font-weight: 700;
-		font-size: 3.875rem;
-		line-height: 3.438rem;
+		font-size: 3.2rem;
+		line-height: 3.8rem;
 		letter-spacing: 0.04em;
 	}
-	p {
-		font-size: 1.25rem;
+	& p {
+		font-size: 1.4rem;
+		line-height: 2.2rem;
+		letter-spacing: 0.04em;
 	}
 
-	h1,
-	p {
+	& h1,
+	& p {
 		color: white;
 	}
 
-	span {
-		color: $secondary-colour-1;
+	& span {
+		color: $main-colour-2;
 	}
 }
 
@@ -36,9 +39,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-}
 
-.hero_image {
-	width: 50px;
-	height: 50px;
+	& .hero_image {
+		width: 50px;
+		height: 50px;
+	}
 }
