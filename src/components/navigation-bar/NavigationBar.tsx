@@ -8,7 +8,7 @@ const navData = [
 	{title: 'skills', link: '/'},
 	{title: 'projects', link: '/'},
 	{title: 'experience', link: '/'},
-	{title: 'about', link: '/'},
+	{title: 'resources', link: '/'},
 ];
 
 export default function NavigationBar(): JSX.Element {
