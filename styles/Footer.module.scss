@@ -1,0 +1,58 @@
+@import 'styles/variables.module.scss';
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: left;
+	margin: 0 -128px;
+	padding: 0 128px;
+	background-color: rgba(52, 73, 94, 0.45);
+
+	& .footer_brand {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+
+		& .footer_logo {
+			font-size: 2.2rem;
+			cursor: pointer;
+			color: $main-colour-2;
+		}
+		& p {
+			color: $main-colour-2;
+			font-style: italic;
+		}
+	}
+
+	& .footer_links {
+		margin-right: 128px;
+		& h4 {
+			font-size: 18px;
+			line-height: 17px;
+			color: white;
+			margin-bottom: 0.9rem;
+		}
+		& p {
+			font-size: 14px;
+			line-height: 15px;
+			color: whitesmoke;
+			margin: 0.5rem 0;
+			cursor: pointer;
+		}
+	}
+
+	.footer_copyright {
+		margin-top: 2rem;
+		text-align: center;
+		width: 100%;
+
+		& p {
+			font-size: 14px;
+			line-height: 15px;
+			color: #fff;
+		}
+	}
+}
