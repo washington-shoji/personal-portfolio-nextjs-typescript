@@ -2,6 +2,7 @@
 
 .container {
 	width: 100%;
+	margin: 64px 0;
 	padding: 32px;
 	box-shadow: 0 0 0.04rem 0 rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
@@ -12,7 +13,7 @@
 	& h1 {
 		font-family: Fauna;
 		text-transform: uppercase;
-		color: $secondary-colour-1;
+		color: $main-colour-2;
 	}
 }
 
@@ -26,7 +27,7 @@
 .projects_card__wrapper {
 	display: grid;
 	gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .project_card {
@@ -88,12 +89,29 @@
 		& a:nth-child(1):hover ~ .animation {
 			width: 50%;
 			left: 0;
-			background-color: $secondary-colour-1;
+			background: $secondary-colour-1;
 		}
 		& a:nth-child(2):hover ~ .animation {
 			width: 50%;
 			left: 50%;
-			background-color: $secondary-colour-2;
+			background: $secondary-colour-2;
 		}
+	}
+}
+
+@media (max-width: 1200px) {
+	.projects_card__wrapper {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.project_card:first-child {
+		grid-row: span 2;
+		width: auto;
+	}
+}
+
+@media (max-width: 850px) {
+	.projects_card__wrapper {
+		grid-template-columns: 1fr;
 	}
 }

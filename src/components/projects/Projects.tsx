@@ -34,26 +34,6 @@ const projectData = [
 		demoLink: 'https://nextjs.org/',
 		githubLink: 'https://github.com/',
 	},
-	{
-		id: 4,
-		image: heroImage,
-		imageAlt: '',
-		title: 'Project 4',
-		description:
-			'A short project description, giving a brief overview of what its about.',
-		demoLink: 'https://nextjs.org/',
-		githubLink: 'https://github.com/',
-	},
-	{
-		id: 5,
-		image: heroImage,
-		imageAlt: '',
-		title: 'Project 5',
-		description:
-			'A short project description, giving a brief overview of what its about.',
-		demoLink: 'https://nextjs.org/',
-		githubLink: 'https://github.com/',
-	},
 ];
 export default function Projects(): JSX.Element {
 	return (
