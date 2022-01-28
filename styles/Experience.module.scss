@@ -2,6 +2,8 @@
 
 .container {
 	width: 100%;
+	margin: 64px 0;
+	padding: 32px;
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
@@ -20,7 +22,7 @@
 	& h1 {
 		font-family: Fauna;
 		text-transform: uppercase;
-		color: $secondary-colour-1;
+		color: $main-colour-2;
 	}
 
 	& p {
@@ -66,5 +68,14 @@
 		font-size: 16px;
 		line-height: 24px;
 		color: whitesmoke;
+	}
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 850px) {
+	.container {
+		flex-direction: column;
 	}
 }
