@@ -35,9 +35,9 @@ interface ISkills {
 const skillsData: ISkills[] = [
 	{
 		id: 1,
-		title: 'languages & utils',
+		title: 'languages & utilities',
 		description:
-			'I predominantly use Typescript and Javascript for my full-stack web development and other utility tools to help boost efficiency.',
+			'I predominantly use TypeScript and JavaScript for my full-stack web development and other utility tools to help boost productivity.',
 		icons: [
 			SiJavascript,
 			SiTypescript,
@@ -65,7 +65,7 @@ const skillsData: ISkills[] = [
 		id: 4,
 		title: 'human skills',
 		description:
-			'As a soft-skills, I have good problem solving, team-building and time management. I bring those skills to help my team as best as possible. ',
+			'I am good at problem solving, team-building and time management. I like to bring those skills to help my team/colleagues as best as possible.',
 		icons: [FaQuestionCircle, GiTeamIdea, FaRegClock],
 	},
 ];
