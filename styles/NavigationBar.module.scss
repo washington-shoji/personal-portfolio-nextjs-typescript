@@ -7,7 +7,7 @@
 	padding: 0.4rem;
 
 	& .navbar_logo {
-		font-size: 2.2rem;
+		font-size: 2.8rem;
 		cursor: pointer;
 		color: $main-colour-2;
 	}
@@ -80,5 +80,11 @@
 		width: 100px;
 		left: 400px;
 		background-color: $secondary-colour-5;
+	}
+}
+
+@media (max-width: 850px) {
+	.navbar_container {
+		display: none;
 	}
 }

@@ -18,11 +18,8 @@ export default function Footer(): JSX.Element {
 			</div>
 			<div className={styles.footer_links}>
 				<h4>Links</h4>
-				<p>Home</p>
-				<p>Skills</p>
-				<p>Projects</p>
-				<p>Experience</p>
-				<p>Resources</p>
+				<p>Privacy</p>
+				<p>T&C</p>
 			</div>
 
 			<div className={styles.footer_copyright}>
