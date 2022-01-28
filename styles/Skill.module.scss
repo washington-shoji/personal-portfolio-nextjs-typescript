@@ -61,6 +61,43 @@
 		font-size: 32px;
 		color: whitesmoke;
 		padding-top: 16px;
+
+		& .skills_item__tooltip {
+			position: relative;
+			display: flex;
+			//align-items: flex-start;
+			justify-content: center;
+		}
+
+		& .skills_item__tooltip .skills_item__tooltiptext {
+			visibility: hidden;
+			background-color: rgba(0, 0, 0, 0.4);
+			color: whitesmoke;
+			text-align: center;
+			border-radius: 5px;
+			padding: 5px;
+			margin-top: 40px;
+
+			/* Position the tooltip */
+			position: absolute;
+			border-color: transparent transparent rgba(0, 0, 0, 0.4) transparent;
+			z-index: 1;
+		}
+
+		& .skills_item__tooltip .skills_item__tooltiptext::after {
+			content: '';
+			position: absolute;
+			bottom: 100%; /* At the top of the tooltip */
+			left: 50%;
+			margin-left: -5px;
+			border-width: 5px;
+			border-style: solid;
+			border-color: transparent transparent rgba(0, 0, 0, 0.4) transparent;
+		}
+
+		& .skills_item__tooltip:hover .skills_item__tooltiptext {
+			visibility: visible;
+		}
 	}
 }
 
