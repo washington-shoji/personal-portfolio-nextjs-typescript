@@ -30,6 +30,7 @@ interface ISkills {
 	title: string;
 	description: string;
 	icons?: IconType[];
+	toolTip: string[];
 }
 
 const skillsData: ISkills[] = [
@@ -46,6 +47,7 @@ const skillsData: ISkills[] = [
 			SiVisualstudiocode,
 			SiJira,
 		],
+		toolTip: ['JavaScript', 'TypeScript', 'Git', 'GitHub', 'VSCode', 'Jira'],
 	},
 	{
 		id: 2,
@@ -53,6 +55,7 @@ const skillsData: ISkills[] = [
 		description:
 			'My front-end library and framework of choice are React and Next.js for Server Side Rendering with the help of Node.js dependencies.',
 		icons: [FaReact, SiNextdotjs, SiRedux, FaHtml5, FaCss3, FaSass],
+		toolTip: ['React', 'Next.js', 'Redux', 'HTML5', 'CSS3', 'Sass'],
 	},
 	{
 		id: 3,
@@ -60,13 +63,15 @@ const skillsData: ISkills[] = [
 		description:
 			'I can develop backend API services with Express and NoSQL databases, such as MongoDB or SQL databases with Node.js dependencies. ',
 		icons: [FaNode, SiExpress, SiMongodb, SiMysql],
+		toolTip: ['Node.js', 'Express', 'MongoDB', 'MySQL'],
 	},
 	{
 		id: 4,
 		title: 'human skills',
 		description:
-			'I am good at problem solving, team-building and time management. I like to bring those skills to help my team/colleagues as best as possible.',
+			'I am good at problem-solving, team-building and time management. I like to bring those skills to help my team/colleagues as best as possible.',
 		icons: [FaQuestionCircle, GiTeamIdea, FaRegClock],
+		toolTip: ['Problem-solving', 'Team-building', 'Time-management'],
 	},
 ];
 
@@ -84,7 +89,15 @@ export default function Skill(): JSX.Element {
 							<div className={styles.skills_item__container}>
 								{icons?.map((i, index) => {
 									const Icon = i;
-									return <Icon key={index} />;
+
+									return (
+										<div key={index} className={styles.skills_item__tooltip}>
+											<Icon />
+											<p className={styles.skills_item__tooltiptext}>
+												{data.toolTip[index]}
+											</p>
+										</div>
+									);
 								})}
 							</div>
 						</div>
