@@ -2,19 +2,19 @@
 
 .container {
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-start;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
 	text-align: left;
-	margin: 0 -128px;
-	padding: 0 128px;
+	padding: 32px 0;
+	border-radius: 5px;
 	background-color: rgba(52, 73, 94, 0.45);
 
 	& .footer_brand {
 		display: flex;
 		align-items: center;
-		flex-direction: row;
+		flex-direction: column;
 
 		& .footer_logo {
 			font-size: 2.2rem;
@@ -28,31 +28,43 @@
 	}
 
 	& .footer_links {
-		margin-right: 128px;
 		& h4 {
 			font-size: 18px;
-			line-height: 17px;
 			color: white;
-			margin-bottom: 0.9rem;
 		}
 		& p {
 			font-size: 14px;
-			line-height: 15px;
 			color: whitesmoke;
-			margin: 0.5rem 0;
 			cursor: pointer;
 		}
 	}
 
 	.footer_copyright {
-		margin-top: 2rem;
 		text-align: center;
 		width: 100%;
 
 		& p {
 			font-size: 14px;
-			line-height: 15px;
 			color: #fff;
+		}
+	}
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 450px) {
+	.container {
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+
+		.footer_links {
+			display: flex;
+			align-items: baseline;
+			justify-content: center;
+			flex-wrap: wrap;
+			gap: 12px;
 		}
 	}
 }

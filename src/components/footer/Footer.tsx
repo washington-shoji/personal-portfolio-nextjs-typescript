@@ -6,7 +6,7 @@ export default function Footer(): JSX.Element {
 		<footer className={styles.container}>
 			<div className={styles.footer_brand}>
 				<div className={styles.footer_logo}>{<FaSignature />}</div>
-				<p>ashington Shoji</p>
+				<p>Washington Shoji</p>
 			</div>
 			<div className={styles.footer_links}>
 				<h4>Links</h4>
