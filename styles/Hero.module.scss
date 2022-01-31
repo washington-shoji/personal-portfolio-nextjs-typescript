@@ -4,17 +4,19 @@
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	padding: 32px;
+	gap: 32px;
 }
 
 .hero_header {
 	width: 50%;
-	margin-right: 5rem;
+	//margin-right: 5rem;
 
 	& h1 {
 		font-family: Fauna;
 		text-transform: uppercase;
 		font-weight: 700;
-		font-size: 3.2rem;
+		font-size: 2.8rem;
 		line-height: 3.8rem;
 		letter-spacing: 0.04em;
 	}
@@ -54,6 +56,16 @@
 		& p {
 			font-size: 1rem;
 		}
+	}
+}
+
+@media (max-width: 850px) {
+	.hero_header {
+		width: 100%;
+	}
+
+	.hero_image__wrapper {
+		display: none;
 	}
 }
 
