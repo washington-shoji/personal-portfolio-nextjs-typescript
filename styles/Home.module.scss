@@ -1,15 +1,28 @@
 @import 'styles/variables.module.scss';
 
-.main {
-	min-height: 100vh;
-	padding: 4rem 0;
+.container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
+.main {
+	min-height: 100vh;
+	padding: 4em 0;
+	display: flex;
+	gap: 12em;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 85%;
+}
+
 @media (max-width: 600px) {
+	.main {
+		gap: 6em;
+		width: 100%;
+	}
 	.grid {
 		width: 100%;
 		flex-direction: column;

@@ -4,10 +4,11 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 2em 8em;
 	align-items: baseline;
 	text-align: left;
-	padding: 32px 0;
+
 	border-radius: 5px;
 	background-color: rgba(52, 73, 94, 0.45);
 

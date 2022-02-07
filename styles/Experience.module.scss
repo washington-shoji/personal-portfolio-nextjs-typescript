@@ -1,10 +1,8 @@
 @import 'styles/variables.module.scss';
 
 .container {
-	width: 100%;
-	margin: 64px 0;
-	padding: 32px;
 	display: flex;
+	gap: 6em;
 	justify-content: space-between;
 	flex-direction: row;
 }
@@ -17,7 +15,6 @@
 	flex-direction: column;
 
 	text-align: left;
-	margin-right: 5rem;
 
 	& h1 {
 		font-family: Fauna;
@@ -60,7 +57,7 @@
 
 	& .experience_text {
 		flex: 2;
-		max-width: 390px;
+		//max-width: 390px;
 		display: flex;
 	}
 	& p {

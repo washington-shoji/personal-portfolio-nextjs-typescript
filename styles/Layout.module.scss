@@ -2,7 +2,7 @@
 
 .layout_container {
 	min-height: 100vh;
-	padding: 0 128px;
+	//padding: 0 128px;
 }
 
 .gradient__background {
@@ -42,7 +42,7 @@
 	);
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 600px) {
 	.layout_container {
 		padding: 0 5%;
 	}
