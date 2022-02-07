@@ -4,7 +4,7 @@ import styles from '../../../styles/Hero.module.scss';
 import heroImage from '../../../public/assets/images/bg_1.png';
 export function Hero(): JSX.Element {
 	return (
-		<section className={styles.hero_container}>
+		<section id='hero' className={styles.hero_container}>
 			<div className={styles.hero_header}>
 				<h1>
 					I am <span>Washington</span>

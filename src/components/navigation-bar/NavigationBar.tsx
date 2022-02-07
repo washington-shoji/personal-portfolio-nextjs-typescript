@@ -1,14 +1,14 @@
 import Link from 'next/link';
 import styles from '../../../styles/NavigationBar.module.scss';
 
-import {FaSignature} from 'react-icons/fa';
+import { FaSignature } from 'react-icons/fa';
 
 const navData = [
-	{title: 'home', link: '/'},
-	{title: 'skills', link: '/'},
-	{title: 'projects', link: '/'},
-	{title: 'experience', link: '/'},
-	{title: 'resources', link: '/'},
+	{ title: 'home', link: '/' },
+	{ title: 'skills', link: '#skill' },
+	{ title: 'projects', link: '#projects' },
+	{ title: 'experience', link: '#experience' },
+	{ title: 'resources', link: '/resources' },
 ];
 
 export default function NavigationBar(): JSX.Element {

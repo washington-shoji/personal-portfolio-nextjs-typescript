@@ -1,7 +1,7 @@
-import type {NextPage} from 'next';
+import type { NextPage } from 'next';
 import Head from 'next/head';
 import Experience from '../src/components/experience/Experience';
-import {Hero} from '../src/components/hero/Hero';
+import { Hero } from '../src/components/hero/Hero';
 import Skill from '../src/components/skill/Skill';
 import styles from '../styles/Home.module.scss';
 import Projects from './../src/components/projects/Projects';

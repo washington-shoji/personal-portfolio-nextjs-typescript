@@ -37,7 +37,7 @@ const projectData = [
 ];
 export default function Projects(): JSX.Element {
 	return (
-		<div className={styles.container}>
+		<section id='projects' className={styles.container}>
 			<h1>Projects</h1>
 			<div className={styles.projects_card__wrapper}>
 				{projectData.map((project) => {
@@ -67,6 +67,6 @@ export default function Projects(): JSX.Element {
 					);
 				})}
 			</div>
-		</div>
+		</section>
 	);
 }

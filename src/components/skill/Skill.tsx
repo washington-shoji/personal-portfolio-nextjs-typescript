@@ -1,4 +1,4 @@
-import {IconType} from 'react-icons';
+import { IconType } from 'react-icons';
 import {
 	FaReact,
 	FaHtml5,
@@ -21,7 +21,7 @@ import {
 	SiVisualstudiocode,
 	SiJira,
 } from 'react-icons/si';
-import {GiTeamIdea} from 'react-icons/gi';
+import { GiTeamIdea } from 'react-icons/gi';
 
 import styles from '../../../styles/Skill.module.scss';
 
@@ -39,15 +39,8 @@ const skillsData: ISkills[] = [
 		title: 'languages & utilities',
 		description:
 			'I predominantly use TypeScript and JavaScript for my full-stack web development and other utility tools to help boost productivity.',
-		icons: [
-			SiJavascript,
-			SiTypescript,
-			SiGit,
-			SiGithub,
-			SiVisualstudiocode,
-			SiJira,
-		],
-		toolTip: ['JavaScript', 'TypeScript', 'Git', 'GitHub', 'VSCode', 'Jira'],
+		icons: [SiJavascript, SiTypescript, SiGit, SiGithub],
+		toolTip: ['JavaScript', 'TypeScript', 'Git', 'GitHub'],
 	},
 	{
 		id: 2,
@@ -77,7 +70,7 @@ const skillsData: ISkills[] = [
 
 export default function Skill(): JSX.Element {
 	return (
-		<div className={styles.container}>
+		<section id='skill' className={styles.container}>
 			<h1>Skills</h1>
 			<div className={styles.skills_wrapper}>
 				{skillsData.map((data) => {
@@ -104,6 +97,6 @@ export default function Skill(): JSX.Element {
 					);
 				})}
 			</div>
-		</div>
+		</section>
 	);
 }
