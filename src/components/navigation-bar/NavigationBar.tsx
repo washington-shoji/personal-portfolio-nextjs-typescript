@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import styles from '../../../styles/NavigationBar.module.scss';
 
-import { FaSignature } from 'react-icons/fa';
+import { FaSignature, FaBars } from 'react-icons/fa';
 
 const navData = [
 	{ title: 'home', link: '/' },
@@ -11,10 +11,13 @@ const navData = [
 	{ title: 'resources', link: '/resources' },
 ];
 
-export default function NavigationBar(): JSX.Element {
+export default function NavigationBar(props: any): JSX.Element {
 	return (
 		<div className={styles.navbar_container}>
 			<div className={styles.navbar_logo}>{<FaSignature />}</div>
+			<div className={styles.navbar_menu_icon} onClick={props.handleClick}>
+				{<FaBars />}
+			</div>
 			<nav>
 				{navData.map((item) => {
 					return (
