@@ -20,7 +20,7 @@ export default function ResourceCard(props: any) {
 				<p>{`Be nice to sort of go near them and find out what they're made of, possibly tag their ears.`}</p>
 				<div className={styles.card__navigation}>
 					<Link href={``}>
-						<a target='_blank'> Live demo</a>
+						<a target='_blank'>Preview</a>
 					</Link>
 					<Link href={``}>
 						<a target='_blank'> Github</a>
