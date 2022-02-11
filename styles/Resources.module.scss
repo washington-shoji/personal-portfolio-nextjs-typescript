@@ -29,4 +29,16 @@
 		gap: 4em;
 		padding: 4em 2em;
 	}
+
+	@media (max-width: 1200px) {
+		.body {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (max-width: 750px) {
+		.body {
+			grid-template-columns: 1fr;
+		}
+	}
 }
