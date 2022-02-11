@@ -7,15 +7,18 @@
 	//align-items: baseline;
 	height: 100vh;
 	left: -1000px;
-	padding: 2em 0;
+	padding: 0 2em;
 	box-shadow: 0 0 0.04rem 0 rgba(255, 255, 255, 0.2);
-	border-radius: 5px;
-	background-color: rgba(52, 73, 94, 0.45);
+	background: radial-gradient(
+		circle at 3% 25%,
+		rgba(26, 32, 35, 1) 0%,
+		rgba(40, 55, 79, 1) 100%
+	);
 	transition: all 0.5s ease 0s;
 
 	.mobile__menu__header {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
 		//width: 100%;
 

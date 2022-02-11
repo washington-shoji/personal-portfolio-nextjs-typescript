@@ -12,16 +12,15 @@ export function Layout({ children }: ScriptProps): JSX.Element {
 	const closeMobileMenu = () => setClick(false);
 	const open = click;
 	return (
-		<div
-			className={`${styles.layout_container} ${styles.gradient__background}`}
-		>
-			{open ? (
-				<MobileMenu closeMobileMenu={closeMobileMenu} />
-			) : (
-				<NavigationBar handleClick={handleClick} />
-			)}
-			<div>{children}</div>
-			<Footer />
-		</div>
+		<>
+			{open && <MobileMenu closeMobileMenu={closeMobileMenu} />}
+			<div
+				className={`${styles.layout_container} ${styles.gradient__background}`}
+			>
+				{!open && <NavigationBar handleClick={handleClick} />}
+				<div>{children}</div>
+				<Footer />
+			</div>
+		</>
 	);
 }
