@@ -1,4 +1,4 @@
-import {FaSignature} from 'react-icons/fa';
+import { FaSignature } from 'react-icons/fa';
 import styles from '../../../styles/Footer.module.scss';
 
 export default function Footer(): JSX.Element {
@@ -9,7 +9,7 @@ export default function Footer(): JSX.Element {
 				<p>Washington Shoji</p>
 			</div>
 			<div className={styles.footer_links}>
-				<h4>Links</h4>
+				<p>Links</p>
 				<p>Home</p>
 				<p>Skills</p>
 				<p>Projects</p>
@@ -17,9 +17,9 @@ export default function Footer(): JSX.Element {
 				<p>Resources</p>
 			</div>
 			<div className={styles.footer_links}>
-				<h4>Links</h4>
+				{/* <p>Links</p>
 				<p>Privacy</p>
-				<p>T&C</p>
+				<p>T&C</p> */}
 			</div>
 
 			<div className={styles.footer_copyright}>
