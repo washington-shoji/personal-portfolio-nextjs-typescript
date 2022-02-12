@@ -17,13 +17,13 @@ export default function ResourceCard(props: IResourcesPost): JSX.Element {
 					width={200}
 					height={200}
 				/>
-				<h2>{props.Title}</h2>
-				<p>{props.Text}</p>
+				<h2>{props.title}</h2>
+				<p>{props.text}</p>
 				<div className={styles.card__navigation}>
-					<Link href={`/resources_page/${props.Slug}`}>
+					<Link href={`/resources_page/${props.slug}`}>
 						<a>Preview</a>
 					</Link>
-					<Link href={``}>
+					<Link href={props.link}>
 						<a target='_blank'> Github</a>
 					</Link>
 					<div className={styles.animation}></div>

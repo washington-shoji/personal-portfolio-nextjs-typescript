@@ -11,8 +11,8 @@ import { SleekNavigationBarOne } from '../../src/components/resources/navigation
 export async function getStaticPaths() {
 	const posts: IResourcesPost[] = resourcePosts;
 
-	const paths = posts.map((post: any) => ({
-		params: { slug: post.Slug },
+	const paths = posts.map((post: IResourcesPost) => ({
+		params: { slug: post.slug },
 	}));
 
 	return {
@@ -24,7 +24,9 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }: any) {
 	const { slug } = params;
 
-	const post = resourcePosts.find((p) => p.Slug === slug);
+	const post = resourcePosts.find(
+		(resource: IResourcesPost) => resource.slug === slug
+	);
 
 	return {
 		props: { post },
@@ -35,7 +37,7 @@ export default function Resource({ post }: any) {
 	return (
 		<main className={styles.resource}>
 			<article className={styles.resource__body}>
-				<h1>{post.Title}</h1>
+				<h1>{post.title}</h1>
 				<div className={styles.resource__content}>
 					{(() => {
 						switch (post.component) {

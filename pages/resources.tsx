@@ -26,7 +26,7 @@ const Resources: NextPage = ({ posts }: any) => {
 			</div>
 			<div className={styles.body}>
 				{posts.map((content: IResourcesPost) => {
-					return <ResourceCard key={content.Title} {...content} />;
+					return <ResourceCard key={content.title} {...content} />;
 				})}
 			</div>
 		</div>
