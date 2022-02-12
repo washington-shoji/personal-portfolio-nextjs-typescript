@@ -1,12 +1,6 @@
 import Link from 'next/link';
 import React, { ComponentType } from 'react';
 import styles from './Resource.module.scss';
-import {
-	FakeComponentOne,
-	FakeComponentThree,
-	FakeComponentTwo,
-} from '../../src/dummy-data/fake-components';
-import { fakePosts } from '../../src/dummy-data/fake-posts';
 import { SimpleNavigationBarOne } from '../../src/components/resources/navigation-bars/SimpleNavigationBarOne';
 import {
 	IResourcesPost,
@@ -37,11 +31,7 @@ export async function getStaticProps({ params }: any) {
 	};
 }
 
-const Components = [
-	SimpleNavigationBarOne,
-	SleekNavigationBarOne,
-	FakeComponentThree,
-];
+const Components = [SimpleNavigationBarOne, SleekNavigationBarOne];
 
 export default function Resource({ post }: any) {
 	const Component = Components.find(
