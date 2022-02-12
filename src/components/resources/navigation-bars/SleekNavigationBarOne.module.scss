@@ -1,0 +1,54 @@
+.wrapper {
+	background: url('https://wallpaperaccess.com/full/1213010.jpg') center / cover
+		no-repeat;
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.navigation__bar {
+	border-radius: 5px;
+	height: 50px;
+	display: inline-flex;
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	align-items: center;
+	padding: 0 10px;
+	margin: 50px 0 0 0;
+
+	& .navigation__bar__menu {
+		& a {
+			color: white;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 12px 16px;
+			margin: 0 8px;
+			position: relative;
+			cursor: pointer;
+			white-space: nowrap;
+
+			&::before {
+				content: ' ';
+				position: absolute;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				z-index: -1;
+				transition: 0.2s;
+				border-radius: 5px;
+			}
+			&:hover {
+				&::before {
+					background: linear-gradient(to top, #ffc401, #ffbe0b);
+					box-shadow: 0px 3px 20px 0px black;
+					transform: scale(1.2);
+				}
+				color: black;
+			}
+		}
+	}
+}
