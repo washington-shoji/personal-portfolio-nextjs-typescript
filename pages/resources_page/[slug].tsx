@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import React, { ComponentType } from 'react';
 import styles from './Resource.module.scss';
-import { FakeComponentThree } from '../../src/dummy-data/fake-components';
-import { fakePosts } from '../../src/dummy-data/fake-posts';
 import { SimpleNavigationBarOne } from '../../src/components/resources/navigation-bars/SimpleNavigationBarOne';
 import {
 	IResourcesPost,
