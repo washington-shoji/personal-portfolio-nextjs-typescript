@@ -4,8 +4,9 @@ import Image from 'next/image';
 
 import proj_1_img from '../../../public/assets/images/proj_1.png';
 import Link from 'next/link';
+import { IResourcesPost } from '../../resources-data/resources-data';
 
-export default function ResourceCard(props: any) {
+export default function ResourceCard(props: IResourcesPost): JSX.Element {
 	return (
 		<div className={styles.resource__card}>
 			<div className={styles.card__content}>
@@ -16,11 +17,11 @@ export default function ResourceCard(props: any) {
 					width={200}
 					height={200}
 				/>
-				<h2>{props.title}</h2>
-				<p>{`Be nice to sort of go near them and find out what they're made of, possibly tag their ears.`}</p>
+				<h2>{props.Title}</h2>
+				<p>{props.Text}</p>
 				<div className={styles.card__navigation}>
-					<Link href={``}>
-						<a target='_blank'>Preview</a>
+					<Link href={`/resources_page/${props.Slug}`}>
+						<a>Preview</a>
 					</Link>
 					<Link href={``}>
 						<a target='_blank'> Github</a>
