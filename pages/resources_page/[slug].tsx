@@ -31,19 +31,23 @@ export async function getStaticProps({ params }: any) {
 	};
 }
 
-const Components = [SimpleNavigationBarOne, SleekNavigationBarOne];
-
 export default function Resource({ post }: any) {
-	const Component = Components.find(
-		(Component) => Component.name === post.component
-	) as ComponentType<any>;
-
 	return (
 		<main className={styles.resource}>
 			<article className={styles.resource__body}>
 				<h1>{post.Title}</h1>
 				<div className={styles.resource__content}>
-					<Component />
+					{(() => {
+						switch (post.component) {
+							case 'SleekNavigationBarOne':
+								return <SleekNavigationBarOne />;
+
+							case 'SimpleNavigationBarOne':
+								return <SimpleNavigationBarOne />;
+							default:
+								return null;
+						}
+					})()}
 				</div>
 			</article>
 
