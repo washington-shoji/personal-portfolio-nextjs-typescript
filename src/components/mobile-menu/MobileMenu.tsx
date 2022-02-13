@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from '../../../styles/MobileMenu.module.scss';
 import { FaSignature, FaTimesCircle } from 'react-icons/fa';
 import Link from 'next/link';
@@ -11,19 +11,16 @@ const navData = [
 	{ title: 'resources', link: '/resources' },
 ];
 
-export default function MobileMenu(props: any) {
-	// const [click, setClick] = useState(false);
-	// const handleClick = () => setClick(!click);
-	// const closeMobileMenu = () => setClick(false);
+export default function MobileMenu({ open, handleClick, hiddenWrapper }: any) {
+	useEffect(() => {
+		hiddenWrapper();
+	}, [open, hiddenWrapper]);
 
 	return (
 		<aside className={styles.mobile__menu}>
 			<div className={styles.mobile__menu__header}>
 				<div className={styles.navbar_logo}>{<FaSignature />}</div>
-				<div
-					className={styles.mobile__menu__close}
-					onClick={props.closeMobileMenu}
-				>
+				<div className={styles.mobile__menu__close} onClick={handleClick}>
 					{<FaTimesCircle />}
 				</div>
 			</div>
@@ -32,7 +29,7 @@ export default function MobileMenu(props: any) {
 				{navData.map((item) => {
 					return (
 						<Link key={item.title} href={`${item.link}`}>
-							<a onClick={props.closeMobileMenu}>{item.title}</a>
+							<a onClick={handleClick}>{item.title}</a>
 						</Link>
 					);
 				})}
