@@ -1,5 +1,5 @@
 import { ScriptProps } from 'next/script';
-import { useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import styles from '../../../styles/Layout.module.scss';
 import Footer from '../footer/Footer';
@@ -7,13 +7,34 @@ import MobileMenu from '../mobile-menu/MobileMenu';
 import NavigationBar from '../navigation-bar/NavigationBar';
 
 export function Layout({ children }: ScriptProps): JSX.Element {
-	const [click, setClick] = useState(false);
-	const handleClick = () => setClick(!click);
-	const closeMobileMenu = () => setClick(false);
-	const open = click;
+	const [open, setOpen] = useState(false);
+	const handleClick = () => setOpen(!open);
+
+	const hiddenWrapper = useCallback(() => {
+		function hideScrolling() {
+			if (open === true) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = '';
+				document.body.style.overflow = 'scroll';
+			}
+		}
+		hideScrolling();
+	}, [open]);
+
+	useEffect(() => {
+		hiddenWrapper();
+	}, [hiddenWrapper, open]);
+
 	return (
-		<>
-			{open && <MobileMenu closeMobileMenu={closeMobileMenu} />}
+		<div>
+			{open && (
+				<MobileMenu
+					handleClick={handleClick}
+					hiddenWrapper={hiddenWrapper}
+					open={open}
+				/>
+			)}
 			<div
 				className={`${styles.layout_container} ${styles.gradient__background}`}
 			>
@@ -21,6 +42,6 @@ export function Layout({ children }: ScriptProps): JSX.Element {
 				<div>{children}</div>
 				<Footer />
 			</div>
-		</>
+		</div>
 	);
 }
