@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../../../styles/MobileMenu.module.scss';
+import styles from './MobileMenu.module.scss';
 import { FaSignature, FaTimesCircle } from 'react-icons/fa';
 import Link from 'next/link';
 

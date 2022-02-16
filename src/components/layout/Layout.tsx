@@ -1,7 +1,7 @@
 import { ScriptProps } from 'next/script';
 import { useCallback, useEffect, useState } from 'react';
 
-import styles from '../../../styles/Layout.module.scss';
+import styles from './Layout.module.scss';
 import Footer from '../footer/Footer';
 import MobileMenu from '../mobile-menu/MobileMenu';
 import NavigationBar from '../navigation-bar/NavigationBar';

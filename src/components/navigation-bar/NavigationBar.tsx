@@ -1,13 +1,13 @@
 import Link from 'next/link';
-import styles from '../../../styles/NavigationBar.module.scss';
+import styles from './NavigationBar.module.scss';
 
 import { FaSignature, FaBars } from 'react-icons/fa';
 
-const navData = [
+export const navData = [
 	{ title: 'home', link: '/' },
-	{ title: 'skills', link: '#skill' },
-	{ title: 'projects', link: '#projects' },
-	{ title: 'experience', link: '#experience' },
+	{ title: 'skills', link: '/skills' },
+	{ title: 'projects', link: '/projects' },
+	{ title: 'experience', link: '/experiences' },
 	{ title: 'resources', link: '/resources' },
 ];
 

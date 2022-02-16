@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import styles from '../../../styles/Hero.module.scss';
+import styles from './Hero.module.scss';
 import heroImage from '../../../public/assets/images/bg_1.png';
 export function Hero(): JSX.Element {
 	return (

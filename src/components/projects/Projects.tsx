@@ -1,4 +1,4 @@
-import styles from '../../../styles/Projects.module.scss';
+import styles from './Projects.module.scss';
 import heroImage from '../../../public/assets/images/bg_1.png';
 import proj_1_img from '../../../public/assets/images/proj_1.png';
 import proj_2_img from '../../../public/assets/images/proj_2.png';

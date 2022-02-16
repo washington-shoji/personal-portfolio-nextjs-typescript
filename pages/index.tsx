@@ -17,9 +17,6 @@ const FrontPage: NextPage = () => {
 
 			<main className={styles.main}>
 				<Hero />
-				<Skill />
-				<Projects />
-				<Experience />
 			</main>
 		</div>
 	);

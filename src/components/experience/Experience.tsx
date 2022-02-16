@@ -1,4 +1,4 @@
-import styles from '../../../styles/Experience.module.scss';
+import styles from './Experience.module.scss';
 
 const experienceData = [
 	{
@@ -33,7 +33,7 @@ const experienceData = [
 
 export default function Experience() {
 	return (
-		<section id='experience' className={styles.container}>
+		<main className={styles.container}>
 			<div className={styles.experience_header}>
 				<h1>Experience</h1>
 				<p>Including working and education</p>
@@ -53,6 +53,6 @@ export default function Experience() {
 					);
 				})}
 			</div>
-		</section>
+		</main>
 	);
 }

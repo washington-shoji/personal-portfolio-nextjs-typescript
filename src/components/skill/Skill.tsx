@@ -23,7 +23,7 @@ import {
 } from 'react-icons/si';
 import { GiTeamIdea } from 'react-icons/gi';
 
-import styles from '../../../styles/Skill.module.scss';
+import styles from './Skill.module.scss';
 
 interface ISkills {
 	id: number;
