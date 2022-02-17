@@ -2,18 +2,18 @@
 
 .container {
 	display: flex;
-	gap: 6em;
-	justify-content: space-between;
-	flex-direction: row;
+	flex-direction: column;
+	gap: 2em;
+	max-width: 1200px;
+	padding: 10em 2em;
+	overflow: hidden;
 }
 
 .experience_header {
 	flex: 1;
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	gap: 2em;
 	flex-direction: column;
-
 	text-align: left;
 
 	& h1 {
@@ -74,5 +74,10 @@
 @media (max-width: 850px) {
 	.container {
 		flex-direction: column;
+	}
+
+	.experience_content {
+		flex-direction: column;
+		gap: 2em;
 	}
 }

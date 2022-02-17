@@ -33,7 +33,7 @@ const experienceData = [
 
 export default function Experience() {
 	return (
-		<main className={styles.container}>
+		<div className={styles.container}>
 			<div className={styles.experience_header}>
 				<h1>Experience</h1>
 				<p>Including working and education</p>
@@ -53,6 +53,6 @@ export default function Experience() {
 					);
 				})}
 			</div>
-		</main>
+		</div>
 	);
 }
