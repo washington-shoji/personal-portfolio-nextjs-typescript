@@ -3,6 +3,7 @@
 .layout_container {
 	min-height: 100vh;
 	//padding: 0 128px;
+	overflow: hidden;
 }
 
 .gradient__background {
@@ -42,8 +43,3 @@
 	);
 }
 
-@media (max-width: 600px) {
-	.layout_container {
-		padding: 0 5%;
-	}
-}

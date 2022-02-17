@@ -23,6 +23,7 @@
 	.footer_nav {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 		gap: 2em;
 	}
 
@@ -39,7 +40,12 @@
 	.footer_copyright {
 		color: rgba(245, 245, 245, 0.37);
 	}
+}
 
-
-
+@media (max-width: 600px) {
+	.footer_nav {
+		flex-direction: column;
+		padding: 2em 0;
+		
+	}
 }
