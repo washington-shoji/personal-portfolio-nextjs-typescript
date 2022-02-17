@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Experience from '../../src/components/experience/Experience';
-import Projects from '../../src/components/projects/Projects';
 import styles from './Experiences.module.scss';
 
 const ExperiencesPage: NextPage = () => {

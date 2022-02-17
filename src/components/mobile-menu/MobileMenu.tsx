@@ -5,9 +5,9 @@ import Link from 'next/link';
 
 const navData = [
 	{ title: 'home', link: '/' },
-	{ title: 'skills', link: '#skill' },
-	{ title: 'projects', link: '#projects' },
-	{ title: 'experience', link: '#experience' },
+	{ title: 'skills', link: '/skills' },
+	{ title: 'projects', link: '/projects' },
+	{ title: 'experience', link: '/experiences' },
 	{ title: 'resources', link: '/resources' },
 ];
 
