@@ -36,11 +36,11 @@ interface ISkills {
 const skillsData: ISkills[] = [
 	{
 		id: 1,
-		title: 'languages & utilities',
+		title: 'languages',
 		description:
-			'I predominantly use TypeScript and JavaScript for my full-stack web development and other utility tools to help boost productivity.',
-		icons: [SiJavascript, SiTypescript, SiGit, SiGithub],
-		toolTip: ['JavaScript', 'TypeScript', 'Git', 'GitHub'],
+			'I predominantly use TypeScript and JavaScript for my full-stack web development.',
+		icons: [SiJavascript, SiTypescript],
+		toolTip: ['JavaScript', 'TypeScript'],
 	},
 	{
 		id: 2,
@@ -65,6 +65,13 @@ const skillsData: ISkills[] = [
 			'I am good at problem-solving, team-building and time management. I like to bring those skills to help my team/colleagues as best as possible.',
 		icons: [FaQuestionCircle, GiTeamIdea, FaRegClock],
 		toolTip: ['Problem-solving', 'Team-building', 'Time-management'],
+	},
+	{
+		id: 5,
+		title: 'utilities',
+		description: 'I like to use utility tools to help boost productivity.',
+		icons: [SiGit, SiGithub],
+		toolTip: ['Git', 'GitHub'],
 	},
 ];
 
