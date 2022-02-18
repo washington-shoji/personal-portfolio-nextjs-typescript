@@ -43,9 +43,11 @@
 }
 
 @media (max-width: 600px) {
+	.container{
+		padding-bottom: 12px;
+	}
 	.footer_nav {
 		flex-direction: column;
 		padding: 2em 0;
-		
 	}
 }

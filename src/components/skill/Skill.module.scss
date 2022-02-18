@@ -7,7 +7,6 @@
 	max-width: 1200px;
 	padding: 10em 2em;
 	overflow: hidden;
-	
 
 	& h1 {
 		font-family: Fauna;
@@ -28,13 +27,11 @@
 	grid-auto-columns: 1fr;
 	color: whitesmoke;
 	grid-template-areas:
-	'one'
-	'two'
-	'three'
-	'four'
-	'five';
-
-
+		'one'
+		'two'
+		'three'
+		'four'
+		'five';
 
 	& .skills_category {
 		display: flex;
@@ -47,7 +44,6 @@
 		background-color: rgba(150, 145, 145, 0.3);
 		border-radius: 5px;
 		border: 1px solid rgba(209, 213, 219, 0.3);
-
 
 		& h2 {
 			font-size: 20px;
@@ -62,8 +58,6 @@
 			color: whitesmoke;
 		}
 	}
-
-
 
 	& .skills_item__container {
 		display: grid;
@@ -113,49 +107,51 @@
 
 .skills_category:nth-child(1) {
 	grid-area: one;
-  }
+}
 .skills_category:nth-child(2) {
 	grid-area: two;
-  }
+}
 .skills_category:nth-child(3) {
 	grid-area: three;
-  }
+}
 .skills_category:nth-child(4) {
 	grid-area: four;
-  }
-  .skills_category:nth-child(5) {
+}
+.skills_category:nth-child(5) {
 	grid-area: five;
-  }
-
-
-
+}
 
 @media screen and (min-width: 33em) {
 	.skills_wrapper {
 		grid-template-areas:
-		"one one"
-		"two three"
-		"five five"
-		"four four";
+			'one one'
+			'two three'
+			'five five'
+			'four four';
 	}
-  }
-  
-  @media screen and (min-width: 38em) {
-	.skills_wrapper {
-	  grid-template-areas:
-	   'two two'
-	   'one three'
-	   'five three'
-	   'four four';
-	}
-  }
-  
-  @media screen and (min-width: 54em) {
+}
+
+@media screen and (min-width: 38em) {
 	.skills_wrapper {
 		grid-template-areas:
-		"one three three"
-		"two two two"
-		"four four five"
+			'two two'
+			'one three'
+			'five three'
+			'four four';
 	}
-  }
-   
+}
+
+@media screen and (min-width: 54em) {
+	.skills_wrapper {
+		grid-template-areas:
+			'one three three'
+			'two two two'
+			'four four five';
+	}
+}
+
+@media (max-width: 600px) {
+	.container{
+		padding: 10em 0.5em;;
+	}
+}
