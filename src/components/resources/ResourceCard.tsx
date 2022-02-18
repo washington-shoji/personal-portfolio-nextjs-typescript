@@ -8,7 +8,7 @@ import { IResourcesPost } from '../../resources-data/resources-data';
 
 export default function ResourceCard(props: IResourcesPost): JSX.Element {
 	return (
-		<div className={styles.resource__card}>
+		<div className={styles.container}>
 			<div className={styles.card__content}>
 				<Image
 					className={styles.project_image}

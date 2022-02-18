@@ -35,7 +35,7 @@ export async function getStaticProps({ params }: any) {
 
 export default function Resource({ post }: any) {
 	return (
-		<main className={styles.resource}>
+		<main className={styles.container}>
 			<article className={styles.resource__body}>
 				<h1>{post.title}</h1>
 				<div className={styles.resource__content}>

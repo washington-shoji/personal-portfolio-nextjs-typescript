@@ -14,7 +14,11 @@ export const navData = [
 export default function NavigationBar(props: any): JSX.Element {
 	return (
 		<div className={styles.navbar_container}>
-			<div className={styles.navbar_logo}>{<FaSignature />}</div>
+			<div className={styles.navbar_logo}>
+				<Link href='/' passHref>
+					<FaSignature />
+				</Link>
+			</div>
 			<div className={styles.navbar_menu_icon} onClick={props.handleClick}>
 				{<FaBars />}
 			</div>

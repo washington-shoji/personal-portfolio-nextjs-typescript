@@ -7,8 +7,11 @@ import MobileMenu from '../mobile-menu/MobileMenu';
 import NavigationBar from '../navigation-bar/NavigationBar';
 
 export function Layout({ children }: ScriptProps): JSX.Element {
-	const [open, setOpen] = useState(false);
-	const handleClick = () => setOpen(!open);
+	const [open, setOpen] = useState<boolean>(false);
+
+	function handleClick(): void {
+		setOpen(!open);
+	}
 
 	const hiddenWrapper = useCallback(() => {
 		function hideScrolling() {

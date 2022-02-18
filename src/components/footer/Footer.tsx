@@ -9,7 +9,11 @@ export default function Footer(): JSX.Element {
 			<div>
 				<nav className={styles.footer_nav}>
 					<div className={styles.footer_brand}>
-						<div className={styles.footer_logo}>{<FaSignature />}</div>
+						<div className={styles.footer_logo}>
+							<Link href='/' passHref>
+								<FaSignature />
+							</Link>
+						</div>
 					</div>
 					{navData.map((item) => {
 						return (
