@@ -1,6 +1,14 @@
+import { TimeLine } from '../timeline/Timeline';
 import styles from './Experience.module.scss';
 
-const experienceData = [
+export interface IExperience {
+	id: number;
+	title: string;
+	text: string;
+	time: string;
+}
+
+const experienceData: IExperience[] = [
 	{
 		id: 1,
 		title: 'Volunteering',
@@ -15,19 +23,21 @@ const experienceData = [
 	},
 	{
 		id: 3,
+		title: 'Master of IT',
+		text: 'Graduated in 2017 - University Technology Sydney',
+		time: '2017',
+	},
+	{
+		id: 4,
 		title: 'Business Analyst',
 		text: 'Before becoming a full-stack web developer, I worked for The NSW Department of Education. The department is responsible for governing over 2,200 public schools and education programs in the state. My role here was to conduct analyses of internal data sources, to determine how to best allocate available resources to have maximum impact on the schools.',
 		time: '2015 - 2018',
 	},
 	{
-		id: 4,
-		title: 'Master of IT',
-		text: 'Graduated in 2017 - University Technology Sydney',
-	},
-	{
 		id: 5,
 		title: 'Bachelor of Commerce',
 		text: 'Graduated in 2010 - Macquarie University',
+		time: '2010',
 	},
 ];
 
@@ -36,23 +46,9 @@ export default function Experience() {
 		<div className={styles.container}>
 			<div className={styles.experience_header}>
 				<h1>Experience</h1>
-				<p>Including working and education</p>
+				<p>Work and education</p>
 			</div>
-			<div className={styles.experience_wrapper}>
-				{experienceData.map((exp) => {
-					return (
-						<div key={exp.id} className={styles.experience_content}>
-							<div className={styles.experience_title}>
-								<h1>{exp.title}</h1>
-								<p>{exp.time}</p>
-							</div>
-							<div className={styles.experience_text}>
-								<p>{exp.text}</p>
-							</div>
-						</div>
-					);
-				})}
-			</div>
+			<TimeLine data={experienceData} />
 		</div>
 	);
 }

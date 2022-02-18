@@ -3,7 +3,7 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	gap: 2em;
+	gap: 6em;
 	max-width: 1200px;
 	padding: 10em 2em;
 	overflow: hidden;
@@ -14,11 +14,15 @@
 	display: flex;
 	gap: 2em;
 	flex-direction: column;
-	text-align: left;
+	text-align: center;
 
 	& h1 {
 		font-family: Fauna;
 		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 3.8rem;
+		letter-spacing: 0.04em;
 		color: $main-colour-2;
 	}
 
@@ -37,47 +41,5 @@
 	flex-direction: column;
 }
 
-.experience_content {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
-	flex-direction: row;
 
-	& .experience_title {
-		flex: 1;
-		margin-right: 2rem;
-	}
-	& h1 {
-		font-weight: 800;
-		font-size: 18px;
-		line-height: 24px;
-		letter-spacing: 0.04em;
-		color: white;
-	}
 
-	& .experience_text {
-		flex: 2;
-		display: flex;
-	}
-	& p {
-		font-weight: 500;
-		font-size: 16px;
-		line-height: 24px;
-		color: whitesmoke;
-	}
-}
-
-@media (max-width: 1200px) {
-}
-
-@media (max-width: 850px) {
-	.container {
-		flex-direction: column;
-	}
-
-	.experience_content {
-		flex-direction: column;
-		gap: 2em;
-	}
-}
