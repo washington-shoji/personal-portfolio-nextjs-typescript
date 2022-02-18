@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import styles from './Hero.module.scss';
 import heroImage from '../../../public/assets/images/bg_1.png';
+import { SocialButtons } from '../social-buttons/SocialButtons';
 export function Hero(): JSX.Element {
 	return (
 		<section id='hero' className={styles.hero_container}>
@@ -13,6 +14,7 @@ export function Hero(): JSX.Element {
 					I am a passionate, full-stack web developer who strives to help people
 					solve their problems with my technical skills.
 				</p>
+				<SocialButtons />
 			</div>
 			<div className={styles.hero_image__wrapper}>
 				<Image

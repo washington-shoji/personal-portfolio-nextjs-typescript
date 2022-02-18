@@ -9,6 +9,9 @@
 }
 
 .hero_header {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
 	width: 50%;
 	//margin-right: 5rem;
 

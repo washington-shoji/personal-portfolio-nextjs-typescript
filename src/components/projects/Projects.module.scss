@@ -3,7 +3,7 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	gap: 2em;
+	gap: 6em;
 	max-width: 1200px;
 	padding: 10em 2em;
 	overflow: hidden;
@@ -11,6 +11,11 @@
 	& h1 {
 		font-family: Fauna;
 		text-transform: uppercase;
+		text-align: center;
+		font-weight: 700;
+		font-size: 1.6rem;
+		line-height: 3.8rem;
+		letter-spacing: 0.04em;
 		color: $main-colour-2;
 	}
 }
