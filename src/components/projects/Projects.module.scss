@@ -28,24 +28,22 @@
 
 .project_card {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	padding: 16px;
 	box-shadow: 0 0 0.04rem 0 rgba(255, 255, 255, 0.2);
 	border-radius: 5px;
 	background-color: rgba(52, 73, 94, 0.45);
 }
 .project_card:first-child {
-	grid-row: span 2;
-	width: 600px;
+	grid-column: span 2;
 }
 
 .project {
 	display: flex;
 	gap: 2em;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	height: 100%;
 
 	& h2 {
 		font-size: 20px;
@@ -117,7 +115,7 @@
 	}
 
 	.project_card:first-child {
-		grid-row: span 2;
+		grid-column: span 1;
 		width: auto;
 	}
 }
@@ -128,8 +126,3 @@
 	}
 }
 
-@media (max-width: 600px) {
-	.container{
-		padding: 10em 0.5em;;
-	}
-}
