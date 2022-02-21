@@ -15,9 +15,9 @@ const FrontPage: NextPage = () => {
 				<link rel='icon' href='/ws_logo.ico' />
 			</Head>
 
-			<main className={styles.main}>
+			{/* <main className={styles.main}>
 				<Hero />
-			</main>
+			</main> */}
 		</div>
 	);
 };

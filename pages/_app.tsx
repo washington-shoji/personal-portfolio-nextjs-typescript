@@ -1,12 +1,16 @@
 import '../styles/globals.scss';
-import type {AppProps} from 'next/app';
-import {Layout} from '../src/components/layout/Layout';
+import type { AppProps } from 'next/app';
+import { Layout } from '../src/components/layout/Layout';
+import { LayoutExp } from '../src/components/layout_exp/LayoutExp';
 
-function MyApp({Component, pageProps}: AppProps): JSX.Element {
+function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	return (
-		<Layout>
+		<LayoutExp>
 			<Component {...pageProps} />
-		</Layout>
+		</LayoutExp>
+		// <Layout>
+		// 	<Component {...pageProps} />
+		// </Layout>
 	);
 }
 
