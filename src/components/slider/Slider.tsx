@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { projectData } from '../../resources-data/project-data';
+import { projectData, projectsData } from '../../resources-data/project-data';
 import Card from '../card/Card';
 import styles from './Slider.module.scss';
-import { IProjectData } from './../../resources-data/project-data';
+import { IProjectsData } from './../../resources-data/project-data';
 
-export default function Slider({ slides }: { slides: IProjectData[] }) {
+export default function Slider({ slides }: { slides: IProjectsData[] }) {
 	const [current, setCurrent] = useState(0);
 	const length = slides.length;
 
@@ -28,7 +28,7 @@ export default function Slider({ slides }: { slides: IProjectData[] }) {
 				<div className={styles.right__arrow} onClick={nextSlide}>
 					<span className={styles.border}>{`>`}</span>
 				</div>
-				{projectData.map((slide: any, index: number) => {
+				{projectsData.map((slide: any, index: number) => {
 					return (
 						<div
 							className={
