@@ -14,7 +14,8 @@
 		flex-direction: column;
 		gap: 2em;
 		& h1 {
-			font-size: 10rem;
+			//font-size: 10rem;
+			font-size: 10vw;
 			font-weight: 900;
 			text-transform: uppercase;
 			background: url('../../public/assets/images/vid_2.gif');
@@ -93,5 +94,29 @@
 	}
 	85% {
 		top: -125px;
+	}
+}
+
+@media (max-width: 600px) {
+	.container {
+		.hero {
+			gap: 4em;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.animated__text {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.animated__text .inner__animated__text {
+			align-items: center;
+			text-align: center;
+		}
+
+		.button {
+			width: 100%;
+		}
 	}
 }
