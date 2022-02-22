@@ -34,3 +34,12 @@
 		}
 	}
 }
+
+@media (max-width: 768px) {
+	.container {
+		.header {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
