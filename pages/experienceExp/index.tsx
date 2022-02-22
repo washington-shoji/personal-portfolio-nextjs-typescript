@@ -67,7 +67,7 @@ export default function Experience(data: { data: IExperienceData[] }) {
 					);
 				})}
 			</div>
-			<Button internalLink='/heroExp' title='Back to home' />
+			<Button internalLink='/heroExp' title='Back to start' />
 		</div>
 	);
 }

@@ -1,6 +1,5 @@
 @import 'styles/variables.module.scss';
 
-
 ::-webkit-scrollbar {
 	width: 20px;
 }
@@ -46,4 +45,7 @@ a {
 	src: url('/assets/fonts/fauna/Fauna.ttf');
 	font-weight: 400;
 	font-style: regular;
+}
+
+@media (max-width: 600px) {
 }

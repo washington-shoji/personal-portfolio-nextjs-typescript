@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../../src/components/button-exp/Button';
 import Slider from '../../src/components/slider/Slider';
-import { projectData } from '../../src/resources-data/project-data';
+import { projectsData } from '../../src/resources-data/project-data';
 import styles from './Project.module.scss';
 
 export default function Project() {
@@ -11,7 +11,7 @@ export default function Project() {
 				<p>My recent</p>
 				<h1>Projects</h1>
 			</div>
-			<Slider slides={projectData} />
+			<Slider slides={projectsData} />
 			<Button internalLink='/experienceExp' title={'Go to experience'} />
 		</div>
 	);
