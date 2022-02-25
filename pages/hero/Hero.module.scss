@@ -18,8 +18,16 @@
 			font-size: 10vw;
 			font-weight: 900;
 			text-transform: uppercase;
-			background: url('../../public/assets/images/vid_2.gif');
-			background-size: cover;
+			//background: url('../../public/assets/images/vid_2.gif');
+			background: linear-gradient(
+				-90deg,
+				#ff9100 0%,
+				#f10366 50%,
+				#6173ff 100%
+			);
+			background-size: 400% 400%;
+			animation: gradient 8s ease infinite;
+			//background-size: cover;
 			background-clip: text;
 			-webkit-text-fill-color: transparent;
 		}
@@ -64,7 +72,8 @@
 		font-family: quicksand;
 		font-weight: 500;
 		font-size: 2.2rem;
-		background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+		//background: linear-gradient(-90deg, #ff9100 0%, #f10366 50%, #6173ff 100%);
+		background: #6173ff;
 		background-size: cover;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
@@ -79,6 +88,18 @@
 		width: 60%;
 		padding: 2px;
 		font-size: 0.6rem;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
 	}
 }
 
