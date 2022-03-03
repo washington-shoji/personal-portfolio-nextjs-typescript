@@ -1,0 +1,20 @@
+.video__wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.main__video {
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.4;
+}
