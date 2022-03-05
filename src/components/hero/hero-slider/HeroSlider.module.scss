@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	gap: 2em;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+
+	.myHorizontalSwiper {
+		width: 80%;
+		min-height: 85%;
+	}
+
+	.header {
+		display: flex;
+		width: 100%;
+		.text {
+			margin: auto;
+			position: relative;
+			font-size: 2.8rem;
+		}
+
+		.text::before {
+			content: 'Projects';
+			position: absolute;
+			left: 42%;
+			top: 1.4rem;
+			transform: translateX(-50%);
+			color: rgba(255, 255, 255, 0.4);
+			z-index: -1;
+			font-size: 3.8rem;
+		}
+
+		& p {
+			font-size: 1.6rem;
+		}
+	}
+}
