@@ -26,9 +26,9 @@ export const skillData: ISkill[] = [
 		skill: ['Git', 'GitHub', 'Postman', 'Auth0', 'Stripe'],
 	},
 
-	{
-		id: 5,
-		stack: 'Soft-skill',
-		skill: ['Problem-solving', 'Team-building', 'Time-management'],
-	},
+	// {
+	// 	id: 5,
+	// 	stack: 'Soft-skill',
+	// 	skill: ['Problem-solving', 'Team-building', 'Time-management'],
+	// },
 ];

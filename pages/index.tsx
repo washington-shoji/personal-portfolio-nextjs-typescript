@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import { VideoHero } from '../src/components/video-hero/VideoHero';
 import styles from '../styles/Home.module.scss';
-import Hero from './hero';
 
 const FrontPage: NextPage = () => {
 	return (
