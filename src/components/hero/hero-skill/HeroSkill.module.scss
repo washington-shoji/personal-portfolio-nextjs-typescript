@@ -1,0 +1,70 @@
+.container {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	gap: 6em;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+
+	.header {
+		display: flex;
+		width: 100%;
+		.text {
+			margin: auto;
+			position: relative;
+			font-size: 3.2rem;
+		}
+
+		.text::before {
+			content: 'Skills';
+			position: absolute;
+			left: 45%;
+			top: 1.4rem;
+			transform: translateX(-50%);
+			color: rgba(255, 255, 255, 0.4);
+			z-index: -1;
+			font-size: 4.8rem;
+		}
+
+		& p {
+			font-size: 1.6rem;
+		}
+	}
+
+	.content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+
+		.skills {
+			display: grid;
+			gap: 1em;
+			grid-template-columns: repeat(auto-fit, minmax(200px, max-content));
+			justify-content: center;
+			width: 100%;
+
+			.skill {
+				display: flex;
+				flex-direction: column;
+				gap: 1em;
+				color: white;
+
+				& h3,
+				p {
+					text-align: start;
+				}
+
+				& h3 {
+					font-size: 1.6rem;
+				}
+
+				& span {
+					color: #ffc401;
+					font-size: 2.6rem;
+				}
+			}
+		}
+	}
+}
