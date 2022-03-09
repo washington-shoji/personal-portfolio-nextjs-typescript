@@ -1,3 +1,5 @@
+@import 'styles/variables.module.scss';
+
 .container {
 	height: 100%;
 	display: flex;
@@ -47,10 +49,10 @@
 
 			.button__style {
 				width: 100%;
-				border: 2px solid #ffc401;
+				border: 2px solid $main-colour-3;
 				border-radius: 4px;
-				color: #ffc401;
-				background-color: #ffc4011f;
+				color: white;
+				background-color: rgba(0, 0, 255, 0.11);
 				padding: 1em 6em;
 				text-align: center;
 				text-decoration: none;
@@ -61,8 +63,78 @@
 			}
 
 			.button__style:hover {
-				color: white;
-				background-color: #ffc401;
+				background-color: $main-colour-3;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 595px) {
+	.container {
+		height: 90%;
+		display: flex;
+		gap: 1em;
+		justify-content: center;
+		align-items: center;
+
+		.card {
+			width: 100%;
+			min-height: 80%;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+			justify-content: center;
+			align-items: center;
+			border: 1.5px solid white;
+			border-radius: 4px;
+			padding: 1em;
+			background-color: rgba(0, 0, 0, 0.7);
+			background-image: url('https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2');
+			background-repeat: no-repeat;
+			background-size: cover;
+
+			.content {
+				display: flex;
+				gap: 1em;
+				align-items: center;
+				flex-direction: column;
+				width: 70%;
+
+				& p {
+					font-size: 1rem;
+					font-weight: 400;
+					color: whitesmoke;
+				}
+
+				& p:nth-child(1) {
+					font-size: 1.2rem;
+					font-weight: 500;
+					text-transform: uppercase;
+				}
+			}
+
+			.buttons {
+				display: flex;
+				gap: 2em;
+
+				.button__style {
+					width: 100%;
+					border: 2px solid $main-colour-3;
+					border-radius: 4px;
+					color: white;
+					background-color: rgba(0, 0, 255, 0.11);
+					padding: 1em 6em;
+					text-align: center;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 1rem;
+					cursor: pointer;
+					transition: all 0.5s ease-out;
+				}
+
+				.button__style:hover {
+					background-color: $main-colour-3;
+				}
 			}
 		}
 	}

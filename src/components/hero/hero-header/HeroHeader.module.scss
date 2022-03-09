@@ -1,3 +1,5 @@
+@import 'styles/variables.module.scss';
+
 .container {
 	height: 100%;
 	display: flex;
@@ -12,7 +14,7 @@
 		//text-transform: uppercase;
 
 		& span {
-			color: #ffc401;
+			color: $main-colour-3;
 		}
 	}
 
@@ -29,5 +31,53 @@
 
 	& p {
 		font-size: 1.6rem;
+	}
+}
+
+@media only screen and (max-width: 595px) {
+	.container {
+		.header {
+			position: relative;
+			width: 100%;
+			font-size: 3.2rem;
+			//text-transform: uppercase;
+
+			& span {
+				color: #ffc401;
+			}
+		}
+
+		.header::before {
+			content: 'Hi am,';
+			position: absolute;
+			left: 100px;
+			transform: translateX(-50%);
+			top: -1.2rem;
+			color: rgba(255, 255, 255, 0.4);
+			z-index: -1;
+			font-size: 2.4rem;
+		}
+
+		& p {
+			font-size: 1.6rem;
+		}
+	}
+}
+
+@media only screen and (min-width: 600px) and (max-width: 940px) {
+	.container {
+		.header {
+			font-size: 4.2rem;
+		}
+
+		.header::before {
+			left: 45px;
+			top: -0.8rem;
+			font-size: 2.4rem;
+		}
+
+		& p {
+			font-size: 1.4rem;
+		}
 	}
 }
