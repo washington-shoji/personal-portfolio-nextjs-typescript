@@ -1,3 +1,5 @@
+@import 'styles/variables.module.scss';
+
 .container {
 	position: fixed;
 	left: 0;
@@ -20,12 +22,20 @@
 			color: whitesmoke;
 			text-transform: uppercase;
 			padding: 0.2rem;
-			border-bottom: 2px solid transparent;
+			border: 2px solid transparent;
 			transition: all 0.5s ease-out;
 		}
-
 		.link:hover {
-			border-bottom: 2px solid orange;
+			border-bottom: 2px solid $main-colour-3;
+		}
+
+		.link:first-child:hover {
+			border-bottom: 2px solid $main-colour-3;
+			border-left: 2px solid $main-colour-3;
+		}
+		.link:last-child:hover {
+			border-bottom: 2px solid $main-colour-3;
+			border-right: 2px solid $main-colour-3;
 		}
 	}
 }
