@@ -31,3 +31,9 @@
 		}
 	}
 }
+
+@media (orientation: landscape) {
+	.mySwiper {
+		max-height: 100vh;
+	}
+}
