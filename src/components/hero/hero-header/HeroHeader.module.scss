@@ -41,10 +41,6 @@
 			width: 100%;
 			font-size: 3.2rem;
 			//text-transform: uppercase;
-
-			& span {
-				color: #ffc401;
-			}
 		}
 
 		.header::before {
@@ -80,4 +76,7 @@
 			font-size: 1.4rem;
 		}
 	}
+}
+
+@media (orientation: landscape) {
 }
