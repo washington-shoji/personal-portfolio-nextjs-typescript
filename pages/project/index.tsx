@@ -1,7 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { NavigationMenu } from '../../src/components/navigation-menu/NavigationMenu';
-import SliderTwo from '../../src/components/slider/SliderTwo';
+import SliderPersonalProject from '../../src/components/slider/SliderPersonalProject';
 import { projectsData } from '../../src/resources-data/project-data';
 import styles from './Project.module.scss';
 
@@ -17,7 +17,7 @@ const Project: NextPage = () => {
 			<div className={styles.header}>
 				<h1 className={styles.text}>Personal</h1>
 			</div>
-			<SliderTwo slides={projectsData} />
+			<SliderPersonalProject slides={projectsData} />
 		</div>
 	);
 };
