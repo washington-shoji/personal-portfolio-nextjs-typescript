@@ -2,45 +2,35 @@ import heroImage from '../../public/assets/images/bg_1.png';
 import proj_1_img from '../../public/assets/images/proj_1.png';
 import proj_2_img from '../../public/assets/images/proj_2.png';
 
-export interface IProjectData {
+export interface ICommercialProjectData {
 	id: number;
-	title: string;
-	image: string;
-	description: string;
+	desktopImage: string;
+	tabletImage: string;
+	mobileImage: string;
 	liveLink: string;
-	githubLink: string;
 }
 
-export const projectData: IProjectData[] = [
+export const projectData: ICommercialProjectData[] = [
 	{
 		id: 1,
-		title: 'Project 1',
-		image:
-			'https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2',
-		description:
-			'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
-		liveLink: 'http://localhost:3000/projectExp',
-		githubLink: 'https://github.com/washington-shoji',
+		desktopImage: '/assets/images/pdf-website.webp',
+		tabletImage: '/assets/images/pdf-website-tablet.webp',
+		mobileImage: '/assets/images/pdf-website-mob.webp',
+		liveLink: 'https://pdf-delta.vercel.app/',
 	},
 	{
 		id: 2,
-		title: 'Project 2',
-		image:
-			'https://images.pexels.com/photos/4603464/pexels-photo-4603464.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
-		description:
-			'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
-		liveLink: 'http://localhost:3000/projectExp',
-		githubLink: 'https://github.com/washington-shoji',
+		desktopImage: '/assets/images/wsol-website.webp',
+		tabletImage: '/assets/images/wsol-website-tablet.webp',
+		mobileImage: '/assets/images/wsol-website-mob.webp',
+		liveLink: 'https://w-solutions-website.vercel.app/',
 	},
 	{
 		id: 3,
-		title: 'Project 3',
-		image:
-			'https://images.pexels.com/photos/5499145/pexels-photo-5499145.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260',
-		description:
-			'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.',
-		liveLink: 'http://localhost:3000/projectExp',
-		githubLink: 'https://github.com/washington-shoji',
+		desktopImage: '/assets/images/sj-website.webp',
+		tabletImage: '/assets/images/sj-website-tablet.webp',
+		mobileImage: '/assets/images/sj-website-mob.webp',
+		liveLink: 'https://shaniraja.com/',
 	},
 ];
 
