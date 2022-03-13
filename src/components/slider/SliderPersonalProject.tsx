@@ -1,11 +1,15 @@
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { IProjectsData } from '../../resources-data/project-data';
-import styles from './SliderTwo.module.scss';
+import styles from './SliderPersonalProject.module.scss';
 import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa';
 import Button from '../button/Button';
 
-export default function SliderTwo({ slides }: { slides: IProjectsData[] }) {
+export default function SliderPersonalProject({
+	slides,
+}: {
+	slides: IProjectsData[];
+}) {
 	const [slide, setSlide] = useState(slides);
 	const [index, setIndex] = React.useState(0);
 
