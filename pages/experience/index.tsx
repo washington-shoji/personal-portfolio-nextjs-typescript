@@ -32,7 +32,9 @@ const Experience = () => {
 							</div>
 							<div className={styles.content__body}>
 								<p>{experience.date}</p>
-								<p>{experience.description}</p>
+								<p className={styles.experience__description}>
+									{experience.description}
+								</p>
 							</div>
 						</div>
 					);
