@@ -16,7 +16,7 @@ export const projectData: ICommercialProjectData[] = [
 		desktopImage: '/assets/images/pdf-website.webp',
 		tabletImage: '/assets/images/pdf-website-tablet.webp',
 		mobileImage: '/assets/images/pdf-website-mob.webp',
-		liveLink: 'https://pdf-delta.vercel.app/',
+		liveLink: 'https://www.professionaldevelopmentforum.org/',
 	},
 	// {
 	// 	id: 2,
