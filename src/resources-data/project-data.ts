@@ -18,13 +18,13 @@ export const projectData: ICommercialProjectData[] = [
 		mobileImage: '/assets/images/pdf-website-mob.webp',
 		liveLink: 'https://pdf-delta.vercel.app/',
 	},
-	{
-		id: 2,
-		desktopImage: '/assets/images/wsol-website.webp',
-		tabletImage: '/assets/images/wsol-website-tablet.webp',
-		mobileImage: '/assets/images/wsol-website-mob.webp',
-		liveLink: 'https://w-solutions-website.vercel.app/',
-	},
+	// {
+	// 	id: 2,
+	// 	desktopImage: '/assets/images/wsol-website.webp',
+	// 	tabletImage: '/assets/images/wsol-website-tablet.webp',
+	// 	mobileImage: '/assets/images/wsol-website-mob.webp',
+	// 	liveLink: 'https://w-solutions-website.vercel.app/',
+	// },
 	{
 		id: 3,
 		desktopImage: '/assets/images/sj-website.webp',
